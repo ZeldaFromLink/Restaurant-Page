@@ -1,1 +1,3 @@
-console.log('Hello World!');
+import websiteInit from './modules/website';
+
+websiteInit();
