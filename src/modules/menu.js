@@ -2,7 +2,33 @@ function createMenu() {
   const menu = document.createElement('div');
   menu.classList.add('menu');
 
-  menu.appendChild(createMenuItem('', ''));
+  menu.appendChild(
+    createMenuItem(
+      'Naruto Special',
+      'Chasu, Green Onions, Naruto, Menma, Boiled Egg'
+    )
+  );
+
+  menu.appendChild(
+    // eslint-disable-next-line prettier/prettier
+    createMenuItem('Pork Cutlet Meal', 'Pork, Cutlet, Sweet Potato Fried'
+    )
+  );
+
+  menu.appendChild(
+    createMenuItem(
+      'Shabu Beef Ramen',
+      'Beef, Bean Sprouts, Bamboo Shoot, Green Onions, Red Ginger, Boiled Egg'
+    )
+  );
+
+  menu.appendChild(
+    // eslint-disable-next-line prettier/prettier
+    createMenuItem('Chicken Ramen', 'Chicken, Bean Sprouts, Bamboo Shoot'
+    )
+  );
+
+  return menu;
 }
 
 function createMenuItem(name, description) {

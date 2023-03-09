@@ -11,11 +11,14 @@ function createHome() {
   );
   home.appendChild(createParagraph("Home of Ichiraku's famous Ramen!"));
   home.appendChild(chefImg);
+
+  return home;
 }
 
 function createParagraph(text) {
   const paragraph = document.createElement('p');
   paragraph.textContent = text;
+
   return paragraph;
 }
 
